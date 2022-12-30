@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <!-- <script src="assets/js/js.js" defer></script> -->
+    <!--icon-->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!--slider-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.css"
+    />
+    <!--tailwind.css-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--parallax-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <!--main CSS-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!--:::::::::::::::::::-Header-::::::::::::::::::::-->
+
+    <header
+      class="w-full fixed top-0 left-0 bg-[#090a1a] z-[999] flex justify-between items-center h-16 lg:px-0 px-4"
+    >
+      <a class="text-white block md:hidden href='#'" id="menuOpe">
+        <!-- <img src="" alt="image" class="h-7 sm:h-9" /> -->
+        <h1 class="text-[#643896] text-xl font-semibold">K@r@N</h1>
+      </a>
+
+      <button class="text-white cursor-pointer block md:hidden" id="nav-toggle">
+        <i class="fi fi-rr-apps"></i>
+      </button>
+      <nav
+        class="w-full visible fixed lg:px-0 md:left-0 left-[-100%] md:block top-0 bg-[#090a1a] lg:bg-transparent md:h-auto md:py-0 h-screen py-5 px-2 z-[100]"
+        id="nav-menu"
+      >
+        <div
+          class="menu_Slider max-w-5xl md:h-auto md:flex md:flex-wrap md:justify-between md:items-center md:mx-auto mx-6 grid gap-8 md:gap-0 lg:gap-8 h-full"
+        >
+          <button
+            class="text-white text-xl block absolute right-6 p-1 cursor-pointer md:hidden"
+            id="menu_hide_btn"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+
+          <div>
+            <a href="#" class="flex items-center">
+              <!-- <img src="assets/image/karan.png" alt="hey" class="h-6 sm:h-9" /> -->
+              <h1 class="text-[#643896] text-xl font-semibold">K@r@N</h1>
+            </a>
+          </div>
+          <div class="flex md:order-2 order-1">
+            <button
+              type="button"
+              class="text-white h-fit bg-[#647bff] hover:text-[#647bff] relative overflow-hidden z-10 btn__hover focus:outline-none font-medium rounded-lg text-sm px-8 py-3 text-center mr-3 md:mr-0"
+            >
+              Hire Me
+            </button>
+          </div>
+
+          <div
+            class="nav__menu justify-between items-center w-full md:flex md:w-auto md:order-1"
+          >
+            <ul
+              class="flex flex-col p-4 mt-4 md:flex-row md:mt-0 md:text-base md:font-medium"
+            >
+              <li class="my-4 mx-1 md:my-0">
+                <a
+                  href="#home"
+                  class="block md:my-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded"
+                  >Home</a
+                >
+              </li>
+
+              <li class="my-4 mx-1 md:my-0">
+                <a
+                  href="#about"
+                  class="block md:my-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded"
+                  >About</a
+                >
+              </li>
+
+              <li class="my-4 mx-1 md:my-0">
+                <a
+                  href="#service"
+                  class="block md:my-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded"
+                  >Service</a
+                >
+              </li>
+
+              <li class="my-4 mx-1 md:my-0">
+                <a
+                  href="#portfolio"
+                  class="block md:my-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded"
+                  >Portfolio</a
+                >
+              </li>
+
+              <li class="my-4 mx-1 md:my-0">
+                <a
+                  href="#contact"
+                  class="block md:my-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--:::::::::::::::::::-Hero-Section-::::::::::::::::::::-->
+    <section
+      class="lg:bg-[url('./assets/image/bg.png')] bg-[#090a1a] relative mx-auto bg-center pt-20 lg:pt-36 overflow-hidden"
+      id="home"
+    >
+      <div
+        class="max-w-7xl relative flex justify-center mx-auto flex-col-reverse lg:-flex-row lg:justify-between"
+      >
+        <div
+          class="flex flex-col mt-8 justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left"
+        >
+          <h1
+            class="text-2xl font-normal leading-none lg:text-5xl text-white sr01"
+          >
+            I'M
+            <br />
+            Karan
+            <span class="font-semibold"></span>
+          </h1>
+          <span
+            class="mt-3 mg:mx-0 mx-auto w-24 h-[3px] bg-white rounded sr02 lg:mx-0"
+          ></span>
+          <p class="mt-3 lg:mb-8 text-base md:text-lg text-white sr02">
+            Website Devleper
+            <br class="hidden md:inline lg:hidden" />
+            Fresher
+          </p>
+          <div
+            class="flex justify-center space-y-4 flex-row sm:space-y-0 md:space-x-4 lg:justify-start"
+          >
+            <a
+              href="#"
+              class="flex my-8 lg:my-0 items-center lg:text-lg text-white lg:cursor-pointer md:px-8 px-4 py-4 text-sm font-normal rounded bg-[#647bff] hover:bg-[#FFF] hover:text-[#647bff] sr03"
+            >
+              <li class="fa-solid fa-cloud-arrow-down flex mr-2"></li>
+              Download CV
+            </a>
+          </div>
+        </div>
+        <!-- lg:block hidden absolute -->
+        <div class="hidden lg:block">
+          <span class="absolute opacity-10 -top-36 scene" id="scene">
+            <h1
+              class="text-white font-bold uppercase text-[18rem]"
+              data-depth="0.40"
+            >
+              Karan
+            </h1>
+          </span>
+
+          <span
+            class="absolute w-8 left-56 top-32 opacity-10 scene2"
+            id="scene2"
+          >
+            <img src="assets/image/Ellipse 1.png" alt="iam" data-depth="2.5" />
+          </span>
+
+          <span
+            class="absolute w-8 left-[72rem] top-[10rem] opacity-10 scene2"
+            id="scene3"
+          >
+            <img src="assets/image/Rectangle 1.png" alt="" data-depth="1.9" />
+          </span>
+
+          <span
+            class="absolute w-8 left-[40rem] top-[14rem] opacity-10 scene2"
+            id="scene4"
+          >
+            <img src="assets/image/Vector 1.png" alt="" data-depth="2.5" />
+          </span>
+        </div>
+        <div
+          class="flex items-center relative justify-center mt-0 mr-0 lg:mt-8 h-72 sm:h-80 lg:h-[42rem]"
+        >
+          <!-- assets/image/hero.png -->
+          <img
+            src="assets/image/background.jpg.png"
+            alt="heroimg"
+            class="h-72 sm:h-80 lg:h-[42rem] object-cover sr03"
+          />
+        </div>
+
+        <div
+          class="flex absolute left-0 right-0 top-auto lg:top-0 lg:left-auto lg:-right-32 bottom-0 justify-center items-center gap-4 lg:rotate-90"
+        >
+          <span class="text-white text-sm font-semibold -tracking-widest w-max">
+            F o l l o w m e
+          </span>
+          <span class="w-12 h-[3px] bg-[#647bff] rounded"></span>
+          <div class="flex gap-4">
+            <a
+              href="#"
+              class="text-white hover:text-[#647bff] transition duration-100"
+              target="_blank"
+            >
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a
+              href="https://github.com/karan-078" 
+              class="text-white hover:text-[#020202] transition duration-100"
+              target="_blank"
+            >
+         
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/karan-bisht-442463248/"
+              class="text-white hover:text-[#0077b5] transition duration-100"
+              target="_blank"
+            >
+              <i class="fa-brands fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/karanbisht7895/"
+              class="text-white hover:text-[#f6004c] transition duration-100"
+              target="_blank"
+            >
+              <i class="fa-brands fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--:::::::::::::::::::-About-section-::::::::::::::::::::-->
+
+    <section
+      class="bg-[#090a1a] p-6 mx-auto pd-14 pt-20 lg:pt-32 lg:pb-28"
+      id="about"
+    >
+      <div
+        class="flex justify-center text-center mb-20 mt-4 mx-auto overflow-hidden"
+      >
+        <h2
+          class="text-white font-bold select-none relative inline-block uppercase text-xl md:text-4xl z-10 sr01"
+        >
+          About
+
+          <span class="text-[#647bff]">ME</span>
+          <span
+            class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-6xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10"
+            >About</span
+          >
+        </h2>
+      </div>
+
+      <div class="max-w-7xl mt-4 relative mx-auto">
+        <div
+          class="flex w-full flex-col md:flex-row sm:justify-center items-center"
+        >
+          '
+          <div
+            class="w-[250px] md:w-[300px] flex justify-center items-center relative before:hidden before:md:block before:absolute md:before:w-[300px] md:before:h-[375px] before:border-dashed before:border-2 before:border[#647bff] md:before:left-7 md:before:top-7 before:rounded-[20px] before:z-[10]"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+              alt="image"
+              class="rounded-xl object-cover z-20"
+            />
+          </div>
+
+          <div class="flex flex-col p-5 md:p-0 md:pl-16 md:w-[50%]">
+            <div class="text-white sr02">
+              <h3
+                class="text-lg font-medium mb-2.5 bg-[#647bff] bg-opacity-[0.161] text-[#647bff] rounded px-4 w-max"
+              >
+                Bio
+              </h3>
+              <p class="leading-7 text-sm">
+                Hi, I'm Karan a self-taught react js developer, building
+                responsive website, passionate about learning new technologies
+                and pushed myself to learn the most effective way to achieve my
+                goals.
+              </p>
+            </div>
+            <div class="text-white mt-6 sr03">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="flex">
+                  <h5
+                    class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col"
+                  >
+                    <span
+                      class="text-[#647bff] font-semibold md:text-lg text-base mr-4"
+                      >Age : 21</span
+                    >
+                  </h5>
+                </div>
+
+                <div class="flex">
+                  <h5
+                    class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col"
+                  >
+                    <span
+                      class="text-[#647bff] font-semibold md:text-lg text-base mr-4"
+                    >
+                      Education : BSC(math) Kumaun Univeristy
+                    </span>
+                  </h5>
+                </div>
+
+                <div class="flex">
+                  <h5
+                    class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col"
+                  >
+                    <span
+                      class="text-[#647bff] font-semibold md:text-lg text-base mr-4"
+                      >Amusement : playing ,Criket , phtography , tracking</span
+                    >
+                  </h5>
+                </div>
+                <div class="flex">
+                  <h5
+                    class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col"
+                  >
+                    <span
+                      class="text-[#647bff] font-semibold md:text-lg text-base mr-4"
+                      >City : New Delhi</span
+                    >
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-start mt-5 sr04">
+              <button
+                class="flex text-white border border-[#647bff] w-28 h-14 md:w-32 justify-center items-center relative z-10 overflow-hidden hover:text-[#647bff] hover:border-none btn__hover foucs:outline-none rounded-xl text-sm sm:text-base"
+              >
+                Contact Me
+              </button>
+
+              <button
+                class="ml-3 flex text-white border bg-[#647bff] border-[#647bff] w-28 h-14 md:w-32 justify-center items-center relative z-10 overflow-hidden hover:text-[#647bff] hover:border-none btn__hover foucs:outline-none rounded-xl text-sm sm:text-base"
+              >
+                Hire Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ::::::::::service-section:::::: -->
+    <section
+      class="bg-[#090a1a] p-6 mx-auto pd-14 pt-20 lg:pt-32 lg:pb-28"
+      id="service"
+    >
+      <div
+        class="flex justify-center text-center mb-20 mt-4 mx-auto overflow-hidden"
+      >
+        <h2
+          class="text-white font-bold select-none relative inline-block uppercase text-xl md:text-4xl z-10 sr01"
+        >
+          MY
+
+          <span class="text-[#647bff]">service</span>
+          <span
+            class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-6xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10"
+            >SERVICE</span
+          >
+        </h2>
+      </div>
+
+      <div class="max-w-7xl mt-4 relative mx-auto">
+        <div
+          class="max-w-xs md:max-w-[42rem] lg:max-w-[62rem] mx-auto grid first-letter: grid-cols-1 pt-6 justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6"
+        >
+          <div
+            class="flex flex-col items-center bg-transparent group hover:bg-[#111430] transition ease-in duration-200 rounded-lg p-4 lg:p-8 sr02"
+          >
+            <div
+              class="w-24 h-24 border-4 border-white border-dashed rounded-full overflow-hidden mb-2 md:mb-8"
+            >
+              <img
+                src=""
+                alt="image1"
+                class="w-full h-full object-cover object-center p-5"
+              />
+            </div>
+            <div>
+              <h4
+                class="group-hover:text-[#647bff] text-white transition ease-in duration-300 md:text-lg font-medium text-center"
+              >
+                Planing
+              </h4>
+              <p class="text-white text-sm text-center mt-4 md:mt-8">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Impedit numquam molestiae quae, saepe ab necessitatibus modi
+                nobis dignissimos totam dolorem!
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center bg-transparent group hover:bg-[#111430] transition ease-in duration-200 rounded-lg p-4 lg:p-8 sr02"
+          >
+            <div
+              class="w-24 h-24 border-4 border-white border-dashed rounded-full overflow-hidden mb-2 md:mb-8"
+            >
+              <img
+                src=""
+                alt="image1"
+                class="w-full h-full object-cover object-center p-5"
+              />
+            </div>
+            <div>
+              <h4
+                class="group-hover:text-[#647bff] text-white transition ease-in duration-300 md:text-lg font-medium text-center"
+              >
+                Planing
+              </h4>
+              <p class="text-white text-sm text-center mt-4 md:mt-8">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Impedit numquam molestiae quae, saepe ab necessitatibus modi
+                nobis dignissimos totam dolorem!
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center bg-transparent group hover:bg-[#111430] transition ease-in duration-200 rounded-lg p-4 lg:p-8 sr02"
+          >
+            <div
+              class="w-24 h-24 border-4 border-white border-dashed rounded-full overflow-hidden mb-2 md:mb-8"
+            >
+              <img
+                src=""
+                alt="image1"
+                class="w-full h-full object-cover object-center p-5"
+              />
+            </div>
+            <div>
+              <h4
+                class="group-hover:text-[#647bff] text-white transition ease-in duration-300 md:text-lg font-medium text-center"
+              >
+                Planing
+              </h4>
+              <p class="text-white text-sm text-center mt-4 md:mt-8">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Impedit numquam molestiae quae, saepe ab necessitatibus modi
+                nobis dignissimos totam dolorem!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skill--section -->
+
+    <section class="bg-[#090a1a] p-6 mx-auto pd-14 pt-20 lg:pt-32 lg:pb-28">
+      <div
+        class="flex justify-center text-center mb-20 mt-4 mx-auto overflow-hidden"
+      >
+        <h2
+          class="text-white font-bold select-none relative inline-block uppercase text-xl md:text-4xl z-10 sr01"
+        >
+          MY
+
+          <span class="text-[#647bff]">Skills</span>
+          <span
+            class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-6xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10"
+            >Skills</span
+          >
+        </h2>
+      </div>
+
+      <div class="max-w-7xl mt-4 relative mx-auto">
+        <div class="max-w-md md:max-w-[50rem] mx-auto">
+          <div
+            class="flex justify-center items-center mt-4 mb-8 md:gap-4 gap-2"
+          >
+            <h3
+              class="text-sm sm:text-base font-medium bg-[#647bff] bg-opacity-[0.161] text-[#647bff] rounded w-max px-2"
+            >
+              Frontend
+            </h3>
+
+            <h3
+              class="text-sm sm:text-base font-medium bg-opacity-[0.161] text-white rounded w-max px-2"
+            >
+              Frontend
+            </h3>
+
+            <h3
+              class="text-sm sm:text-base font-medium bg-opacity-[0.161] text-white rounded w-max px-2"
+            >
+              Frontend
+            </h3>
+          </div>
+        </div>
+
+        <div class="mt-12">
+          <div class="md:flex sm:block items-center justify-center mb-10 sr02">
+            <div class="md:pr-2 lg:pr-4 md:pb-0 pb-5">
+              <h3
+                class="text-white sm:text-left text-center md:text-lg lg:text-xl font-medium"
+              >
+                Boostrap
+              </h3>
+            </div>
+            <div class="flex md:gap-6 sm:gap-[1.2rem] gap-2 justify-center">
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:flex sm:block items-center justify-center mb-10 sr02">
+            <div class="md:pr-2 lg:pr-4 md:pb-0 pb-5">
+              <h3
+                class="text-white sm:text-left text-center md:text-lg lg:text-xl font-medium"
+              >
+                Boostrap
+              </h3>
+            </div>
+            <div class="flex md:gap-6 sm:gap-[1.2rem] gap-2 justify-center">
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:flex sm:block items-center justify-center mb-10 sr02">
+            <div class="md:pr-2 lg:pr-4 md:pb-0 pb-5">
+              <h3
+                class="text-white sm:text-left text-center md:text-lg lg:text-xl font-medium"
+              >
+                Boostrap
+              </h3>
+            </div>
+            <div class="flex md:gap-6 sm:gap-[1.2rem] gap-2 justify-center">
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:flex sm:block items-center justify-center mb-10 sr02">
+            <div class="md:pr-2 lg:pr-4 md:pb-0 pb-5">
+              <h3
+                class="text-white sm:text-left text-center md:text-lg lg:text-xl font-medium"
+              >
+                Boostrap
+              </h3>
+            </div>
+            <div class="flex md:gap-6 sm:gap-[1.2rem] gap-2 justify-center">
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:flex sm:block items-center justify-center mb-10 sr02">
+            <div class="md:pr-2 lg:pr-4 md:pb-0 pb-5">
+              <h3
+                class="text-white sm:text-left text-center md:text-lg lg:text-xl font-medium"
+              >
+                Boostrap
+              </h3>
+            </div>
+            <div class="flex md:gap-6 sm:gap-[1.2rem] gap-2 justify-center">
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:flex sm:block items-center justify-center mb-10 sr02">
+            <div class="md:pr-2 lg:pr-4 md:pb-0 pb-5">
+              <h3
+                class="text-white sm:text-left text-center md:text-lg lg:text-xl font-medium"
+              >
+                Boostrap
+              </h3>
+            </div>
+            <div class="flex md:gap-6 sm:gap-[1.2rem] gap-2 justify-center">
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:flex sm:block items-center justify-center mb-10 sr02">
+            <div class="md:pr-2 lg:pr-4 md:pb-0 pb-5">
+              <h3
+                class="text-white sm:text-left text-center md:text-lg lg:text-xl font-medium"
+              >
+                Boostrap
+              </h3>
+            </div>
+            <div class="flex md:gap-6 sm:gap-[1.2rem] gap-2 justify-center">
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+
+              <div>
+                <div
+                  class="circle w-5 h-5 sm:h-7 sm:w-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- project -->
+    <!-- <section
+      class="bg-[#090a1a] p-6 mx-auto pd-14 pt-20 lg:pt-32 lg:pb-28"
+      id="About"
+    >
+      <div
+        class="flex justify-center text-center mb-20 mt-4 mx-auto overflow-hidden"
+      >
+        <h2
+          class="text-white font-bold select-none relative inline-block uppercase text-xl md:text-4xl z-10 sr01"
+        >
+          MY
+
+          <span class="text-[#647bff]">Skills</span>
+          <span
+            class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-8xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10"
+            >Skills</span
+          >
+        </h2>
+      </div>
+
+      <div class="max-w-7xl px-6 mt-4 relative mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-8 pt-14">
+          <div
+            class="flex flex-col justify-center items-center bg-[#111430] rounded-lg p-4 lg:p-8 sr07"
+          >
+            <div class="w-20 md:w-28 mb-2">
+              <img src="https://img.freepik.com/free-vector/cute-teddy-bear-waving-hand-cartoon-icon-illustration_138676-2714.jpg?size=338&ext=jpg&ga=GA1.2.2089106806.1668316442" alt="image1">
+              <p class="text-base font-semibold text-white">300+project</p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col justify-center items-center bg-[#111430] rounded-lg p-4 lg:p-8 sr07"
+          >
+            <div class="w-20 md:w-28 mb-2">
+              <img src="https://img.freepik.com/free-vector/cute-teddy-bear-waving-hand-cartoon-icon-illustration_138676-2714.jpg?size=338&ext=jpg&ga=GA1.2.2089106806.1668316442" alt="image1">
+              <p class="text-base font-semibold text-white">300+project</p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col justify-center items-center bg-[#111430] rounded-lg p-4 lg:p-8 sr07"
+          >
+            <div class="w-20 md:w-28 mb-2">
+              <img src="https://img.freepik.com/free-vector/cute-teddy-bear-waving-hand-cartoon-icon-illustration_138676-2714.jpg?size=338&ext=jpg&ga=GA1.2.2089106806.1668316442" alt="image1">
+              <p class="text-base font-semibold text-white">300+project</p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col justify-center items-center bg-[#111430] rounded-lg p-4 lg:p-8 sr07"
+          >
+            <div class="w-20 md:w-28 mb-2">
+              <img src="https://img.freepik.com/free-vector/cute-teddy-bear-waving-hand-cartoon-icon-illustration_138676-2714.jpg?size=338&ext=jpg&ga=GA1.2.2089106806.1668316442" alt="image1">
+              <p class="text-base font-semibold text-white">300+project</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>   -->
+
+    <!-- portfolio-------section -->
+
+    <section
+      class="bg-[#090a1a] p-6 mx-auto pd-14 pt-20 lg:pt-32 lg:pb-28"
+      id="portfolio"
+    >
+      <div
+        class="flex justify-center text-center mb-20 mt-4 mx-auto overflow-hidden"
+      >
+        <h2
+          class="text-white font-bold select-none relative inline-block uppercase text-xl md:text-4xl z-10 sr01"
+        >
+          <span class="text-[#647bff]">Portfolio</span>
+          <span
+            class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-6xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10"
+            >PortFolio</span
+          >
+        </h2>
+      </div>
+    </section>
+
+    <!-- blog---section -->
+
+    <!-- <section
+
+
+      class="bg-[#090a1a] p-6 mx-auto pd-14 pt-20 lg:pt-32 lg:pb-28"
+      id="About"
+    >
+      <div
+        class="flex justify-center text-center mb-20 mt-4 mx-auto overflow-hidden"
+      >
+        <h2
+          class="text-white font-bold select-none relative inline-block uppercase text-xl md:text-4xl z-10 sr01"
+        >
+          MY
+
+          <span class="text-[#647bff]">Skills</span>
+          <span
+            class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-8xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10"
+            >Skills</span
+          >
+        </h2>
+      </div>
+      <div
+        class="max-w-sm sm:max-w-lg md:max-w-3xl lg:max-w-6xl w-full swiper pt-6 mx-auto"
+      >
+        <div class="slide-content overflow-hidden pb-14 mx-6 sr02">
+          <div class="swiper-wrapper select-none">
+            <div class="swiper-slide">
+              <div class="h-full rounded-lg overflow-hidden bg-slate-800">
+                <img
+                  src="https://source.unsplash.com/random/300x300?10"
+                  alt=""
+                  class="h-56 rounded-lg w-full object-cover object-center"
+                />
+                <div class="p-4">
+                  <div class="flex items-center justify-between text-xs mb-4">
+                    <a href="#" class="text-white">4 sept 2022</a>
+                    <span class="text-[#6747f6]"> Tips & Tricks </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- contact- section -->
+    <section
+      class="bg-[#090a1a] p-6 mx-auto pd-14 pt-20 lg:pt-32 lg:pb-28"
+      id="contact"
+    >
+      <div
+        class="flex justify-center text-center mb-20 mt-4 mx-auto overflow-hidden"
+      >
+        <h2
+          class="text-white font-bold select-none relative inline-block uppercase text-xl md:text-4xl z-10 sr01"
+        >
+          Contact
+
+          <span class="text-[#647bff]">ME</span>
+          <span
+            class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-6xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10"
+            >contact</span
+          >
+        </h2>
+      </div>
+
+      <div
+        class="max-w=md md:max-w-[50rem] px-4 sm:px-0 lg:w-2/3 mx-auto pt-10"
+      >
+        <form>
+          <div class="flex flex-wrap -m-2">
+            <div class="p-2 w-full sr02">
+              <div class="relative">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  class="w-full px bg-[#2d2d53] rounded-xl border border-[#2d2d53] foucs:border-indigo-500 outline-none text-white py-4 px-6 sm:py-5 sm:px-8 placeholder-white text-base font-light transition duration-200 ease-in-out"
+                />
+              </div>
+            </div>
+            <div class="p-2 w-full sr02">
+              <div class="relative">
+                <input
+                  type="email"
+                  placeholder="Email Adderss"
+                  class="w-full px bg-[#2d2d53] rounded-xl border border-[#2d2d53] foucs:border-indigo-500 outline-none text-white py-4 px-6 sm:py-5 sm:px-8 placeholder-white text-base font-light transition duration-200 ease-in-out"
+                />
+              </div>
+            </div>
+            <div class="p-2 w-full sr02">
+              <textarea
+                id="message"
+                placeholder="write your message"
+                class="w-full h-52 px bg-[#2d2d53] rounded-xl border border-[#2d2d53] foucs:border-indigo-500 outline-none text-white px-6 py-4 sm:py-5 sm:px-8 placeholder-white text-base font-light transition duration-200 ease-in-out"
+              ></textarea>
+            </div>
+            <div class="p-2 w-full sr02">
+              <button
+                type="submit"
+                class="btn__hover flex mx-auto text-white hover:text-black bg-[#647bff] py-2 px-10 foucs:outline-none rounded-lg relative overflow-hidden z-10"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!------footer----setion ------>
+
+    <section class="w-full bg-[#090a1a]">
+      <div class="bg-[#181c3f]] py-4">
+        <h2 class="text-white text-center lg:text-white text-center">
+          Copyright@karan-2022
+        </h2>
+      </div>
+    </section>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <!---slider js--->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.js"></script>
+    <!---main js--->
+    <script src="assets/js/js.js"></script>
+  </body>
+</html>
